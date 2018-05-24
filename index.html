@@ -1,16 +1,257 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        
 
-        <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script src="dist/js/bundle.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+
+<body>
+
+    <nav class="yellow darken-3">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="black-text" href="sass.html">Strona Główna</a>
+                </li>
+                <li>
+                    <a class="black-text" href="badges.html">O nas</a>
+                </li>
+                <li>
+                    <a class="black-text" href="collapsible.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="sass.html">Strona Główna</a>
+        </li>
+        <li>
+            <a href="badges.html">O nas</a>
+        </li>
+        <li>
+            <a href="collapsible.html">Kontakt</a>
+        </li>
+    </ul>
+
+    <header class="header">
+        <div class='header__title'>
+            <h1 class="header__title--text center">
+                <span>A&S SERWIS S.C.
+                    <br /> Wulkanizacja
+                    <br /> Serwis
+                </span>
+            </h1>
+            <div>
+                <a class="header__title--icon" href="tel:+48-503-328-142">
+                    <i class="white-text medium material-icons center">local_phone</i>
+                    <span class="header__title--icon-text">503 328 142</span>
+                </a>
+                <a class="header__title--icon" href="https://www.google.com/maps/dir//A%26S+SERWIS+S.C.Wymiana+Opon,+serwis+opon,wulkanizacja+Marcin+Adamek+Krzysztof+Skura/data=!4m8!4m7!1m0!1m5!1m1!1s0x471a3487679353a3:0x61f777d4f7aabc86!2m2!1d19.4787396!2d51.7178605">
+                    <i class="white-text medium material-icons center">room</i>
+                    <span class="header__title--icon-text">Wyznacz trasę</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="yellow darken-4 about">
+        <div class="container">
+            <div class="row center about__header">
+                <h3 class="about__header--title">A&S SERWIS
+                    <br /> Marcin Adamek
+                    <br />Krzysztof Skura</h3>
+                <div class="about__header--subtitle col offset-l3 l6">
+                    <p>A&S Serwis powstało z myślą o oferowaniu usług mechaniki samochodowej na najwyższym poziomie. Jesteśmy
+                        pasjonatami motoryzacji, co sprawia, że do pracy podchodzimy z pełnym zaangażowaniem.</p>
+                </div>
+            </div>
+            <div class="row about__services">
+                <div class="col s12 m4 l4">
+                    <div class="center">
+                        <i class="large material-icons">directions_car</i>
+                        <p class="about__services--title">Wulkanizacja</p>
+                        <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom
+                            components.
+                        </p>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="center">
+                        <i class="large material-icons">build</i>
+                        <p class="about__services--title">Serwis</p>
+                        <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that
+                            focuses on User Experience.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="center">
+                        <i class="large material-icons">ac_unit</i>
+                        <p class="about__services--title">Klimatyzacja</p>
+                        <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="carousel">
+            <a class="carousel-item modal-trigger" href="#modal1">
+                <img src="http://lh3.googleusercontent.com/--Eo4Pcyx9Pg41gpI8XoeLz5rhWeVBep2NFrK2IMw3hiUyecSShP6-vp5DAwS-at7busXB1B=w320-h320-n-no-v1">
+            </a>
+            <a class="carousel-item modal-trigger" href="#modal1">
+                <img src="http://lh3.googleusercontent.com/oGgpVUxYrDHPvKNDT0aJ7b3PBCX6KSqQ0zx76HGcB-OErL65gFMRPNnE6tZYlEsPl8c2tb7A=w320-h320-n-no-v1">
+            </a>
+            <a class="carousel-item modal-trigger" href="#modal1">
+                <img src="http://lh3.googleusercontent.com/BIzkhz3DYQ_mbdzIfE7x352C4kjyIAvaRLmbLwQzm0-zzYWBfe6GOtg4GoiBgLsvm5aTCul3=w320-h320-n-no-v1">
+            </a>
+            <a class="carousel-item modal-trigger" href="#modal1">
+                <img src="http://lh3.googleusercontent.com/-3d34J3HxcrjXHal9iBZK25BzeQs_oe4G-OxGtbThq5Afkf6VLjn-HbRionyzD3DjLcOu7XJ=w320-h320-n-no-v1">
+            </a>
+        </div>
+        <div id="modal1" class="modal gallery__modal">
+            <img class="gallery__modal--image" src="http://lh3.googleusercontent.com/-3d34J3HxcrjXHal9iBZK25BzeQs_oe4G-OxGtbThq5Afkf6VLjn-HbRionyzD3DjLcOu7XJ=w320-h320-n-no-v1">
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact__cards">
+
+                <div class="card contact__cards--data">
+                    <div class="card-content">
+                        <span class="card-title center">Dane kontaktowe</span>
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <div>
+                                    <i class="black-text tiny material-icons center">local_phone</i> Ulica
+                                    <div class="secondary-content">
+                                        <span class="black-text">Obszerna 59</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>
+                                    <i class="black-text tiny material-icons center">local_phone</i> Kraj
+                                    <div class="secondary-content">
+                                        <span class="black-text">Polska</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>
+                                    <i class="black-text tiny material-icons center">local_phone</i> Miato
+                                    <div class="secondary-content">
+                                        <span class="black-text">Łódź</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>
+                                    <i class="black-text tiny material-icons center">local_phone</i> Kod pocztowy
+                                    <div class="secondary-content">
+                                        <span class="black-text">93-360</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>
+                                    <i class="black-text tiny material-icons center">local_phone</i> Telefon
+                                    <div class="secondary-content">
+                                        <span class="black-text">503 328 142</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>
+                                    <i class="black-text tiny material-icons center">local_phone</i> e-mail
+                                    <div class="secondary-content">
+                                        <span class="black-text">przykładowymail@gmail.pl</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card contact__cards--hours">
+                    <div class="card-content">
+                        <span class="card-title center">Godziny pracy</span>
+                        <ul class="collection">
+                            <li class="collection-item">
+                                <div>Poniedziałek
+                                    <div class="secondary-content">
+                                        <span class="black-text">9-18</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Wtorek
+                                    <div class="secondary-content">
+                                        <span class="black-text">9-18</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Środa
+                                    <div class="secondary-content">
+                                        <span class="black-text">9-18</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Czwartek
+                                    <div class="secondary-content">
+                                        <span class="black-text">9-18</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Piątek
+                                    <div class="secondary-content">
+                                        <span class="black-text">9-18</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Sobota
+                                    <div class="secondary-content">
+                                        <span class="black-text">9-18</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="collection-item">
+                                <div>Niedziela
+                                    <div class="secondary-content">
+                                        <span class="black-text">9-18</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="dist/js/bundle.js"></script>
+</body>
+
 </html>

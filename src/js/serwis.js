@@ -1,4 +1,5 @@
-import '.././styles/new.scss';
+import '.././styles/serwis.scss';
+console.log('hello')
 
 
 
