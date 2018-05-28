@@ -12393,8 +12393,7 @@ module.exports = g;
 __webpack_require__(/*! ./../../assets/materialize-src/sass/materialize.scss */ "./assets/materialize-src/sass/materialize.scss");
 __webpack_require__(/*! ./../../assets/materialize-src/js/bin/materialize.js */ "./assets/materialize-src/js/bin/materialize.js");
 __webpack_require__(/*! ./../scss/main.scss */ "./src/scss/main.scss");
-__webpack_require__(/*! ./../scss/mixins.scss */ "./src/scss/mixins.scss");
-__webpack_require__(/*! ./../scss/variables.scss */ "./src/scss/variables.scss");
+__webpack_require__(/*! ./../scss/mediaQ.scss */ "./src/scss/mediaQ.scss");
 
 /***/ }),
 
@@ -12407,6 +12406,20 @@ __webpack_require__(/*! ./../scss/variables.scss */ "./src/scss/variables.scss")
 
 "use strict";
 
+
+$(document).ready(function () {
+    $(".nav__link").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 300, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+});
 
 /***/ }),
 
@@ -12422,10 +12435,33 @@ __webpack_require__(/*! ./../scss/variables.scss */ "./src/scss/variables.scss")
 
 $(document).ready(function () {
     $('.sidenav').sidenav();
-    $('.carousel').carousel({
-        indicators: true,
-        padding: 300
+    $('.mobile__link').click(function (e) {
+        $('.sidenav').sidenav('close');
     });
+    $('.carousel').carousel({
+        indicators: true
+    });
+    // function autoplay() {
+    //     $('.carousel').carousel('next');
+    //     setTimeout(autoplay, 5000);
+    // }
+    // autoplay()
+    $('.gallery__carousel--item img').click(function (e) {
+        var itemImg = e.currentTarget.currentSrc;
+        $('.gallery__carousel--modal').css('background-image', 'url("' + itemImg + '")');
+        console.log(itemImg);
+    });
+    $('.gallery__indicator--next').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('next');
+    });
+    $('.gallery__indicator--prev').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('prev');
+    });
+
     $('.modal').modal();
 });
 
@@ -12442,21 +12478,10 @@ $(document).ready(function () {
 
 /***/ }),
 
-/***/ "./src/scss/mixins.scss":
+/***/ "./src/scss/mediaQ.scss":
 /*!******************************!*\
-  !*** ./src/scss/mixins.scss ***!
+  !*** ./src/scss/mediaQ.scss ***!
   \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./src/scss/variables.scss":
-/*!*********************************!*\
-  !*** ./src/scss/variables.scss ***!
-  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

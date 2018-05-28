@@ -11,37 +11,41 @@
     <link rel="stylesheet" href="dist/main.css">
 </head>
 
-<body>
+<body id="home">
+    <div class="navbar-fixed">
+        <nav class="yellow darken-3">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a class="black-text nav__link" href="#home">Strona Główna</a>
+                    </li>
+                    <li>
+                        <a class="black-text nav__link" href="#about">O nas</a>
+                    </li>
+                    <li>
+                        <a class="black-text nav__link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-    <nav class="yellow darken-3">
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Logo</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a class="black-text" href="sass.html">Strona Główna</a>
-                </li>
-                <li>
-                    <a class="black-text" href="badges.html">O nas</a>
-                </li>
-                <li>
-                    <a class="black-text" href="collapsible.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <ul class="sidenav" id="mobile-demo">
+    <ul class="sidenav yellow darken-3" id="mobile-demo">
         <li>
-            <a href="sass.html">Strona Główna</a>
+            <img src="http://via.placeholder.com/300x56?text=Logo">
         </li>
         <li>
-            <a href="badges.html">O nas</a>
+            <a href="#home" class="mobile__link">Strona Główna</a>
         </li>
         <li>
-            <a href="collapsible.html">Kontakt</a>
+            <a href="#about" class="mobile__link">O nas</a>
+        </li>
+        <li>
+            <a href="#contact" class="mobile__link">Kontakt</a>
         </li>
     </ul>
 
@@ -55,18 +59,18 @@
             </h1>
             <div>
                 <a class="header__title--icon" href="tel:+48-503-328-142">
-                    <i class="white-text medium material-icons center">local_phone</i>
+                    <i class="header__title--icon-phone white-text medium material-icons center">local_phone</i>
                     <span class="header__title--icon-text">503 328 142</span>
                 </a>
                 <a class="header__title--icon" href="https://www.google.com/maps/dir//A%26S+SERWIS+S.C.Wymiana+Opon,+serwis+opon,wulkanizacja+Marcin+Adamek+Krzysztof+Skura/data=!4m8!4m7!1m0!1m5!1m1!1s0x471a3487679353a3:0x61f777d4f7aabc86!2m2!1d19.4787396!2d51.7178605">
-                    <i class="white-text medium material-icons center">room</i>
+                    <i class="header__title--icon-location white-text medium material-icons center">room</i>
                     <span class="header__title--icon-text">Wyznacz trasę</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="yellow darken-4 about">
+    <section class="yellow darken-4 about" id="about">
         <div class="container">
             <div class="row center about__header">
                 <h3 class="about__header--title">A&S SERWIS
@@ -82,8 +86,9 @@
                     <div class="center">
                         <i class="large material-icons">directions_car</i>
                         <p class="about__services--title">Wulkanizacja</p>
-                        <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom
-                            components.
+                        <p class="light center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.
                         </p>
                     </div>
                 </div>
@@ -91,42 +96,109 @@
                     <div class="center">
                         <i class="large material-icons">build</i>
                         <p class="about__services--title">Serwis</p>
-                        <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that
-                            focuses on User Experience.</p>
+                        <p class="light center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
                 <div class="col s12 m4 l4">
                     <div class="center">
                         <i class="large material-icons">ac_unit</i>
                         <p class="about__services--title">Klimatyzacja</p>
-                        <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+                        <p class="light center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery black" id="gallery">
         <div class="container">
             <div class="carousel gallery__carousel">
-                <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                    <img src="http://lh3.googleusercontent.com/--Eo4Pcyx9Pg41gpI8XoeLz5rhWeVBep2NFrK2IMw3hiUyecSShP6-vp5DAwS-at7busXB1B=w320-h320-n-no-v1">
-                </a>
-                <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                    <img src="http://lh3.googleusercontent.com/oGgpVUxYrDHPvKNDT0aJ7b3PBCX6KSqQ0zx76HGcB-OErL65gFMRPNnE6tZYlEsPl8c2tb7A=w320-h320-n-no-v1">
-                </a>
-                <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                    <img src="http://lh3.googleusercontent.com/BIzkhz3DYQ_mbdzIfE7x352C4kjyIAvaRLmbLwQzm0-zzYWBfe6GOtg4GoiBgLsvm5aTCul3=w320-h320-n-no-v1">
-                </a>
-                <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                    <img src="http://lh3.googleusercontent.com/-3d34J3HxcrjXHal9iBZK25BzeQs_oe4G-OxGtbThq5Afkf6VLjn-HbRionyzD3DjLcOu7XJ=w320-h320-n-no-v1">
-                </a>
+                <div class="gallery__indicator">
+                    <div class="left">
+                        <a href="" class="gallery__indicator--prev gallery__indicator--direction waves-effect waves-light">
+                            <i class="white-text material-icons left  gallery__indicator--direction-icon">chevron_left</i>
+                        </a>
+                    </div>
+
+                    <div class="right">
+                        <a href="" class="gallery__indicator--next gallery__indicator--direction waves-effect waves-light">
+                            <i class="white-text material-icons right gallery__indicator--direction-icon">chevron_right</i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
+                        <img src="http://lh3.googleusercontent.com/--Eo4Pcyx9Pg41gpI8XoeLz5rhWeVBep2NFrK2IMw3hiUyecSShP6-vp5DAwS-at7busXB1B=w1024-h768-n-no-v1">
+                    </a>
+                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
+                        <img src="http://lh3.googleusercontent.com/oGgpVUxYrDHPvKNDT0aJ7b3PBCX6KSqQ0zx76HGcB-OErL65gFMRPNnE6tZYlEsPl8c2tb7A=w1024-h768-n-no-v1">
+                    </a>
+                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
+                        <img src="http://lh3.googleusercontent.com/BIzkhz3DYQ_mbdzIfE7x352C4kjyIAvaRLmbLwQzm0-zzYWBfe6GOtg4GoiBgLsvm5aTCul3=w1024-h768-n-no-v1">
+                    </a>
+                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
+                        <img src="http://lh3.googleusercontent.com/-3d34J3HxcrjXHal9iBZK25BzeQs_oe4G-OxGtbThq5Afkf6VLjn-HbRionyzD3DjLcOu7XJ=w1024-h768-n-no-v1">
+                    </a>
+                </div>
             </div>
             <div id="modal1" class="modal gallery__carousel--modal">
-                <img class="gallery__carousel--modal-image" src="http://lh3.googleusercontent.com/-3d34J3HxcrjXHal9iBZK25BzeQs_oe4G-OxGtbThq5Afkf6VLjn-HbRionyzD3DjLcOu7XJ=w320-h320-n-no-v1">
+                <i class="white-text modal-close waves-effect waves-green btn-fla medium material-icons right">close</i>
             </div>
         </div>
     </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2472.0770794493133!2d19.473037532671636!3d51.713332338830426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61f777d4f7aabc86!2sA%26S+SERWIS+S.C.Wymiana+Opon%2C+serwis+opon%2Cwulkanizacja+Marcin+Adamek+Krzysztof+Skura!5e0!3m2!1spl!2spl!4v1527489475315"
+            width="100%" height="700px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <footer class="page-footer black footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12 m6 footer__contact">
+                    <h5 class="white-text">Kontakt</h5>
+                    <p class="grey-text text-lighten-4">ul. Obszerna 59</p>
+                    <p class="grey-text text-lighten-4">93-124 Łódź</p>
+                    <p class="grey-text text-lighten-4">
+                        <a href="tel:+48-503-328-142">503 328 142
+                        </a>
+                    </p>
+                    <p class="grey-text text-lighten-4">
+                        <a href="mailto:przykładowymail@gmail.com">przykładowymail@gmail.com
+                        </a>
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 offset-m0 s12 m6 footer__hours">
+                    <h5 class="white-text footer__hours">Godziny pracy</h5>
+                    <div class="row">
+                        <div class="col l5 m4 s6">Poniedziałek</div>
+                        <div class="col l7 m8 s6">9-18</div>
+                        <div class="col l5 m4 s6">Wtorek</div>
+                        <div class="col l7 m8 s6">9-18</div>
+                        <div class="col l5 m4 s6">Środa</div>
+                        <div class="col l7 m8 s6">9-18</div>
+                        <div class="col l5 m4 s6">Czwartek</div>
+                        <div class="col l7 m8 s6">9-18</div>
+                        <div class="col l5 m4 s6">Piątek</div>
+                        <div class="col l7 m8 s6">9-18</div>
+                        <div class="col l5 m4 s6">Sobota</div>
+                        <div class="col l7 m8 s6">9-14</div>
+                        <div class="col l5 m4 s6">Niedziela</div>
+                        <div class="col l7 m8 s6">Zamknięte</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="dist/main.js"></script>

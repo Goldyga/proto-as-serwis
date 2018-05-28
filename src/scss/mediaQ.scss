@@ -1,0 +1,26 @@
+@import './../../assets/materialize-src/sass/materialize.scss';
+
+@media #{$small-and-down} {
+    .header {
+        background-position: center;
+        justify-content: center;
+        &__title {
+            margin: 0;
+            &--text {
+                font-size: 3rem;
+            }
+        }
+    }
+    .footer {
+        padding-top: 60px;
+        &__contact {
+            text-align: center;
+        }
+        &__hours {
+            text-align: center;
+            &--title {
+                
+            }
+        }
+    }
+}
