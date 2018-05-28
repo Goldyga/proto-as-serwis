@@ -1,5 +1,12 @@
 @import './../../assets/materialize-src/sass/materialize.scss';
 
+@media #{$medium-and-down} {
+    .gallery {
+        &__indicator {
+            display: none;
+        }
+    }
+}
 @media #{$small-and-down} {
     .header {
         background-position: center;

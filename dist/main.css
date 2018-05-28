@@ -13024,6 +13024,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 
+@media only screen and (max-width: 992px) {
+  .gallery__indicator {
+    display: none; } }
+
 @media only screen and (max-width: 600px) {
   .header {
     background-position: center;
@@ -19630,6 +19634,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+
+@media only screen and (max-width: 992px) {
+  .gallery__indicator {
+    display: none; } }
 
 @media only screen and (max-width: 600px) {
   .header {
