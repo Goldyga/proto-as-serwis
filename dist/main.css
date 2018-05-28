@@ -13035,7 +13035,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     .header__title {
       margin: 0; }
       .header__title--text {
-        font-size: 3rem; }
+        font-size: 1.5rem; }
   .footer {
     padding-top: 60px; }
     .footer__contact {
@@ -19646,7 +19646,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     .header__title {
       margin: 0; }
       .header__title--text {
-        font-size: 3rem; }
+        font-size: 1.5rem; }
   .footer {
     padding-top: 60px; }
     .footer__contact {

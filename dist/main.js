@@ -12419,6 +12419,9 @@ $(document).ready(function () {
             });
         }
     });
+    setTimeout(function () {
+        window.scrollTo(0, 1);
+    }, 100);
 });
 
 /***/ }),
@@ -12449,7 +12452,6 @@ $(document).ready(function () {
     $('.gallery__carousel--item img').click(function (e) {
         var itemImg = e.currentTarget.currentSrc;
         $('.gallery__carousel--modal').css('background-image', 'url("' + itemImg + '")');
-        console.log(itemImg);
     });
     $('.gallery__indicator--next').click(function (e) {
         e.preventDefault();

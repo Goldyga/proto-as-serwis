@@ -14,7 +14,6 @@ $(document).ready(function () {
     $('.gallery__carousel--item img').click((e)=> {
         const itemImg = e.currentTarget.currentSrc;
         $('.gallery__carousel--modal').css('background-image', 'url("' + itemImg + '")')
-        console.log(itemImg);
     })
      $('.gallery__indicator--next').click((e) => {
          e.preventDefault();
