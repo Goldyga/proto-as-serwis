@@ -13031,7 +13031,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 600px) {
   .header {
     background-position: center;
-    justify-content: center; }
+    justify-content: center;
+    min-height: 80vh; }
     .header__title {
       margin: 0; }
       .header__title--text {
@@ -19642,7 +19643,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 600px) {
   .header {
     background-position: center;
-    justify-content: center; }
+    justify-content: center;
+    min-height: 80vh; }
     .header__title {
       margin: 0; }
       .header__title--text {
