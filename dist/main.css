@@ -13037,7 +13037,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     .header__title {
       margin: 0; }
       .header__title--text {
-        font-size: 1.5rem; }
+        font-size: 2rem; }
   .footer {
     padding-top: 60px; }
     .footer__contact {
@@ -13063,7 +13063,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     margin-right: 15vw; }
     .header__title--text {
       color: #f9a825;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 3.5rem; }
     .header__title--icon-phone {
       animation-name: iconPhoneAnimation;
       animation-duration: 3s;
@@ -19650,7 +19651,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     .header__title {
       margin: 0; }
       .header__title--text {
-        font-size: 1.5rem; }
+        font-size: 2rem; }
   .footer {
     padding-top: 60px; }
     .footer__contact {
