@@ -12442,7 +12442,8 @@ $(document).ready(function () {
         $('.sidenav').sidenav('close');
     });
     $('.carousel').carousel({
-        indicators: true
+        indicators: true,
+        padding: 200
     });
     // function autoplay() {
     //     $('.carousel').carousel('next');

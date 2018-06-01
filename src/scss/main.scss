@@ -26,7 +26,7 @@
         &--icon {
             &-phone {
                 animation-name: iconPhoneAnimation;
-                animation-duration: 3s;
+                animation-duration: 2s;
                 animation-iteration-count: infinite;
                 @keyframes iconPhoneAnimation {
                     0% {
@@ -42,7 +42,7 @@
             }
             &-location {
                 animation-name: iconLocationAnimation;
-                animation-duration: 3s;
+                animation-duration: 2s;
                 animation-iteration-count: infinite;
                 @keyframes iconLocationAnimation {
                     0% {
@@ -86,7 +86,13 @@
     padding: 50px 0;
     &__indicator {
         position: relative;
-        top: 40%;
+        top: 150px;
+        &--prev {
+            margin-left: 7vw;
+        }
+        &--next {
+            margin-right: 7vw;
+        }
         &--direction {
             border-radius: 100%;
            &-icon {
@@ -97,8 +103,8 @@
     }
     &__carousel {
         &--item {
-            width: 300px !important;
-            height: 300px !important;
+            width: 400px !important;
+            height: 400px !important;
         }
         &--modal {
             height: 100vh;

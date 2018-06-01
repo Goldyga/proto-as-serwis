@@ -5,6 +5,7 @@ $(document).ready(function () {
     });
     $('.carousel').carousel({
         indicators: true,
+        padding: 200
     });
     // function autoplay() {
     //     $('.carousel').carousel('next');

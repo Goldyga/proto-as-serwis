@@ -13038,6 +13038,12 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       margin: 0; }
       .header__title--text {
         font-size: 2rem; }
+  .gallery__carousel--item {
+    width: 200px !important;
+    height: 200px !important; }
+  .gallery__carousel--modal {
+    width: 100% !important;
+    height: 100% !important; }
   .footer {
     padding-top: 60px; }
     .footer__contact {
@@ -13067,7 +13073,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       font-size: 3.5rem; }
     .header__title--icon-phone {
       animation-name: iconPhoneAnimation;
-      animation-duration: 3s;
+      animation-duration: 2s;
       animation-iteration-count: infinite; }
 
 @keyframes iconPhoneAnimation {
@@ -13079,7 +13085,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     transform: rotate(0deg); } }
     .header__title--icon-location {
       animation-name: iconLocationAnimation;
-      animation-duration: 3s;
+      animation-duration: 2s;
       animation-iteration-count: infinite; }
 
 @keyframes iconLocationAnimation {
@@ -13107,15 +13113,19 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   padding: 50px 0; }
   .gallery__indicator {
     position: relative;
-    top: 40%; }
+    top: 150px; }
+    .gallery__indicator--prev {
+      margin-left: 7vw; }
+    .gallery__indicator--next {
+      margin-right: 7vw; }
     .gallery__indicator--direction {
       border-radius: 100%; }
       .gallery__indicator--direction-icon {
         font-size: 4.2rem;
         margin: 0 !important; }
   .gallery__carousel--item {
-    width: 300px !important;
-    height: 300px !important; }
+    width: 400px !important;
+    height: 400px !important; }
   .gallery__carousel--modal {
     height: 100vh;
     background-size: 100% 100%; }
@@ -19652,6 +19662,12 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       margin: 0; }
       .header__title--text {
         font-size: 2rem; }
+  .gallery__carousel--item {
+    width: 200px !important;
+    height: 200px !important; }
+  .gallery__carousel--modal {
+    width: 100% !important;
+    height: 100% !important; }
   .footer {
     padding-top: 60px; }
     .footer__contact {
