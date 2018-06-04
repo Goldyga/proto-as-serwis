@@ -13038,14 +13038,14 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       margin: 0; }
       .header__title--text {
         font-size: 2rem; }
-  .gallery {
-    padding: 0; }
-    .gallery__carousel--item {
-      width: 200px !important;
-      height: 200px !important; }
-    .gallery__carousel--modal {
-      width: 100% !important;
-      height: 100% !important; }
+  .about__header--title {
+    font-size: 2rem; }
+  .gallery__carousel--item {
+    width: 200px !important;
+    height: 200px !important; }
+  .gallery__carousel--modal {
+    width: 100% !important;
+    height: 100% !important; }
   .footer {
     padding-top: 60px; }
     .footer__contact {
@@ -13102,7 +13102,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       font-weight: bold; }
 
 .about {
-  padding: 60px 0; }
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .about__header--title {
     font-weight: bold; }
   .about__header--subtitle {
@@ -13110,9 +13113,18 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .about__services--title {
     font-weight: bold;
     text-transform: uppercase; }
+  .about__services--more-checkIcon {
+    color: green; }
+  .about .more_info, .about .more_close {
+    cursor: pointer;
+    color: green; }
+  .about .more_close {
+    color: red; }
 
 .gallery {
-  padding: 100px 0 100px 0; }
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
   .gallery__wrapper {
     display: flex;
     justify-content: center;
@@ -19667,14 +19679,14 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       margin: 0; }
       .header__title--text {
         font-size: 2rem; }
-  .gallery {
-    padding: 0; }
-    .gallery__carousel--item {
-      width: 200px !important;
-      height: 200px !important; }
-    .gallery__carousel--modal {
-      width: 100% !important;
-      height: 100% !important; }
+  .about__header--title {
+    font-size: 2rem; }
+  .gallery__carousel--item {
+    width: 200px !important;
+    height: 200px !important; }
+  .gallery__carousel--modal {
+    width: 100% !important;
+    height: 100% !important; }
   .footer {
     padding-top: 60px; }
     .footer__contact {

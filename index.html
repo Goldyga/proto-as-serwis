@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/flexSliders/flexslider.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/main.css">
 </head>
 
@@ -26,6 +27,9 @@
                     </li>
                     <li>
                         <a class="black-text nav__link" href="#about">O nas</a>
+                    </li>
+                    <li>
+                        <a class="black-text nav__link" href="#gallery">Galeria</a>
                     </li>
                     <li>
                         <a class="black-text nav__link" href="#contact">Kontakt</a>
@@ -46,12 +50,15 @@
             <a href="#about" class="mobile__link">O nas</a>
         </li>
         <li>
+            <a href="#gallery" class="mobile__link">Galeria</a>
+        </li>
+        <li>
             <a href="#contact" class="mobile__link">Kontakt</a>
         </li>
     </ul>
 
     <header class="header">
-        <div class='header__title'>
+        <div class='header__title' data-aos="zoom-in" data-aos-duration="1500">
             <h1 class="header__title--text center">
                 <span>A&S SERWIS S.C.
                     <br /> Wulkanizacja
@@ -73,7 +80,7 @@
 
     <section class="yellow darken-4 about" id="about">
         <div class="container">
-            <div class="row center about__header">
+            <div class="row center about__header" data-aos="zoom-in" data-aos-duration="500">
                 <h3 class="about__header--title">A&S SERWIS
                     <br /> Marcin Adamek
                     <br />Krzysztof Skura</h3>
@@ -83,83 +90,183 @@
                 </div>
             </div>
             <div class="row about__services">
-                <div class="col s12 m4 l4">
+                <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="500">
                     <div class="center">
                         <i class="large material-icons">directions_car</i>
                         <p class="about__services--title">Wulkanizacja</p>
-                        <p class="light center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat.
-                        </p>
+                        <div class="flexslider_services transparent">
+                            <ul class="slides about__services--list" data-aos="zoom-in" data-aos-duration="500">
+                                <li class="slides about__services--info">
+                                    <p class="light center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <i class="medium material-icons more_info">more_horiz</i>
+                                </li>
+                                <li class="left-align hide slides about__services--more">
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Naprawa opon</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Prostowanie felg</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Depozyt opon / przechowalnia</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Utylizacja starych opon</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right more_close">close</i>
+                                        </div>
+                                        <div class="col s8">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="500">
                     <div class="center">
                         <i class="large material-icons">build</i>
                         <p class="about__services--title">Serwis</p>
-                        <p class="light center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat.</p>
+                        <div class="flexslider_services transparent">
+                            <ul class="slides about__services--list" data-aos="zoom-in" data-aos-duration="500">
+                                <li class="slides about__services--info">
+                                    <p class="light center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                     <i class="medium material-icons more_info">more_horiz</i>
+                                </li>
+                                <li class="left-align hide slides about__services--more">
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Naprawa zawieszenia</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Mechanika samochodowa</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Wymiana rozrządu</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Wymiana klocków i tarcz hamulcowych</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Przegląd techniczny pojazdu</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Diagnostyka komputerowa</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right more_close">close</i>
+                                        </div>
+                                        <div class="col s8">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col s12 m4 l4">
+                <div class="col s12 m4 l4" data-aos="zoom-in" data-aos-duration="500">
                     <div class="center">
                         <i class="large material-icons">ac_unit</i>
                         <p class="about__services--title">Klimatyzacja</p>
-                        <p class="light center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                            ut aliquip ex ea commodo consequat.</p>
+                        <div class="flexslider_services transparent">
+                            <ul class="slides about__services--list" data-aos="zoom-in" data-aos-duration="500">
+                                <li class="slides about__services--info">
+                                    <p class="light center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                     <i class="medium material-icons more_info">more_horiz</i>
+                                </li>
+                                <li class="left-align hide slides about__services--more">
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right about__services--more-checkIcon">check</i>
+                                        </div>
+                                        <div class="col s8">
+                                            <span class="left">Napełnianie i odgrzybianie klimatyzacji</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <i class="small material-icons right more_close">close</i>
+                                        </div>
+                                        <div class="col s8">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <section class="gallery black" id="gallery">
-        <div class="gallery__indicator">
-                <div class="left">
-                    <a href="" class="gallery__indicator--prev gallery__indicator--direction waves-effect waves-light">
-                        <i class="white-text material-icons left  gallery__indicator--direction-icon">chevron_left</i>
-                    </a>
-                </div>
-            
-                <div class="right">
-                    <a href="" class="gallery__indicator--next gallery__indicator--direction waves-effect waves-light">
-                        <i class="white-text material-icons right gallery__indicator--direction-icon">chevron_right</i>
-                    </a>
-                </div>
-            </div>
-        <div class="container">
-            <div class="carousel gallery__carousel">
-                <div>
-                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                        <img src="http://lh3.googleusercontent.com/--Eo4Pcyx9Pg41gpI8XoeLz5rhWeVBep2NFrK2IMw3hiUyecSShP6-vp5DAwS-at7busXB1B=w1024-h768-n-no-v1">
-                    </a>
-                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                        <img src="http://lh3.googleusercontent.com/oGgpVUxYrDHPvKNDT0aJ7b3PBCX6KSqQ0zx76HGcB-OErL65gFMRPNnE6tZYlEsPl8c2tb7A=w1024-h768-n-no-v1">
-                    </a>
-                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                        <img src="http://lh3.googleusercontent.com/BIzkhz3DYQ_mbdzIfE7x352C4kjyIAvaRLmbLwQzm0-zzYWBfe6GOtg4GoiBgLsvm5aTCul3=w1024-h768-n-no-v1">
-                    </a>
-                    <a class="gallery__carousel--item carousel-item modal-trigger" href="#modal1">
-                        <img src="http://lh3.googleusercontent.com/-3d34J3HxcrjXHal9iBZK25BzeQs_oe4G-OxGtbThq5Afkf6VLjn-HbRionyzD3DjLcOu7XJ=w1024-h768-n-no-v1">
-                    </a>
-                </div>
-            </div>
-            <div id="modal1" class="modal gallery__carousel--modal">
-                <i class="white-text modal-close waves-effect waves-green btn-fla medium material-icons right">close</i>
-            </div>
-        </div>
-    </section> -->
-
     <section class="gallery black" id="gallery">
-        <div class="container gallery__wrapper flexslider transparent">
+        <div class="container gallery__wrapper flexslider_image flexslider transparent">
             <div class="gallery__indicator">
                 <a href="" class="gallery__indicator--direction gallery__indicator--direction-left waves-effect waves-light">
                     <i class="white-text material-icons gallery__indicator--direction-icon">chevron_left</i>
                 </a>
             </div>
-            <ul class="gallery__slides slides">
+            <ul class="gallery__slides slides" data-aos="zoom-in" data-aos-duration="500">
                 <li>
                     <a class="gallery__slides--image modal-trigger" href="#modal1">
                         <img src="http://lh3.googleusercontent.com/--Eo4Pcyx9Pg41gpI8XoeLz5rhWeVBep2NFrK2IMw3hiUyecSShP6-vp5DAwS-at7busXB1B=w1024-h768-n-no-v1">
@@ -200,7 +307,7 @@
     <footer class="page-footer black footer" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col l4 s12 m6 footer__contact">
+                <div class="col l4 s12 m6 footer__contact" data-aos="fade-right" data-aos-duration="500">
                     <h5 class="white-text">Kontakt</h5>
                     <p class="grey-text text-lighten-4">ul. Obszerna 59</p>
                     <p class="grey-text text-lighten-4">93-124 Łódź</p>
@@ -213,7 +320,7 @@
                         </a>
                     </p>
                 </div>
-                <div class="col l4 offset-l2 offset-m0 s12 m6 footer__hours">
+                <div class="col l4 offset-l2 offset-m0 s12 m6 footer__hours" data-aos="fade-left" data-aos-duration="500">
                     <h5 class="white-text footer__hours">Godziny pracy</h5>
                     <div class="row">
                         <div class="col l5 m4 s6">Poniedziałek</div>
@@ -242,7 +349,9 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="assets/flexSliders/jquery.flexslider-min.js"></script>
     <script src="dist/main.js"></script>
 </body>
+
 </html>

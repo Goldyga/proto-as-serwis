@@ -65,7 +65,10 @@
 }
 
 .about {
-    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__header {
         &--title {
             font-weight: bold;
@@ -79,11 +82,26 @@
             font-weight: bold;
             text-transform: uppercase;
         }
+        &--more {
+            &-checkIcon {
+                color: green;
+            }         
+        }
+    }
+    .more_info {
+        cursor: pointer;
+        color: green;
+    }
+    .more_close {
+        @extend .more_info;
+        color: red;
     }
 }
 
 .gallery {
-    padding: 100px 0 100px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     &__wrapper {
         display: flex;
         justify-content: center;

@@ -16,6 +16,5 @@ $(document).ready(function () {
         const itemImg = e.currentTarget.currentSrc;
         $('.gallery__carousel--modal').css('background-image', 'url("' + itemImg + '")')
     })
-
      $('.modal').modal();
 });
