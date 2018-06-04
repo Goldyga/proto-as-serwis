@@ -5,27 +5,17 @@ $(document).ready(function () {
     });
     $('.carousel').carousel({
         indicators: true,
-        padding: 200
+        padding: 200,
     });
     // function autoplay() {
     //     $('.carousel').carousel('next');
     //     setTimeout(autoplay, 5000);
     // }
     // autoplay()
-    $('.gallery__carousel--item img').click((e)=> {
+    $('.gallery__slides--image img').click((e) => {
         const itemImg = e.currentTarget.currentSrc;
         $('.gallery__carousel--modal').css('background-image', 'url("' + itemImg + '")')
     })
-     $('.gallery__indicator--next').click((e) => {
-         e.preventDefault();
-         e.stopPropagation();
-         $('.carousel').carousel('next');
-     });
-     $('.gallery__indicator--prev').click((e) => {
-         e.preventDefault();
-         e.stopPropagation();
-         $('.carousel').carousel('prev');
-     });
 
      $('.modal').modal();
 });

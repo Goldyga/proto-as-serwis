@@ -83,16 +83,19 @@
 }
 
 .gallery {
-    padding: 50px 0;
+    padding: 100px 0 100px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    &__slides {
+        height: auto;
+        width: 600px;
+    }
     &__indicator {
-        position: relative;
-        top: 150px;
-        &--prev {
-            margin-left: 7vw;
-        }
-        &--next {
-            margin-right: 7vw;
-        }
+        margin: 0 50px;
         &--direction {
             border-radius: 100%;
            &-icon {
