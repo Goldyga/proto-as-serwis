@@ -5,6 +5,11 @@
         &__indicator {
             display: none;
         }
+        &__slides {
+            &--link {
+                cursor: pointer;
+            }
+        }
     }
 }
 @media #{$small-and-down} {
@@ -32,6 +37,14 @@
             &--modal {
                 width: 100% !important;
                 max-height: 90% !important;
+            }
+        }
+        &__slides {
+            &--link {
+                cursor: pointer;
+                &-image {
+                    height: 50vh !important;
+                }
             }
         }
     }

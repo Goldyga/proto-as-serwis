@@ -81,9 +81,6 @@
         }
     }
     &__services {
-        &--wrapper {
-            padding: 30px 0!important;
-        }
         &--title {
             font-weight: bold;
             text-transform: uppercase;
@@ -108,9 +105,14 @@
         border: none;
     }
     &__slides {
-        border: #F57F17 2px solid;
-        &--image {
+        height: auto;
+        width: auto;
+        &--link {
             cursor: not-allowed;
+            &-image {
+                height: 80vh!important;
+                border: #F57F17 2px solid;
+            }
         }
     }
     &__indicator {
@@ -119,15 +121,11 @@
             border-radius: 100%;
            &-icon {
                font-size: 4.2rem;
-               margin: 0!important;
+               margin: 0 !important;
            } 
         }
     }
     &__carousel {
-        &--item {
-            width: 400px !important;
-            height: 400px !important;
-        }
         &--modal {
             height: 100vh;
             background-size: 100% 100%;

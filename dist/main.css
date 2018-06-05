@@ -13026,7 +13026,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 @media only screen and (max-width: 992px) {
   .gallery__indicator {
-    display: none; } }
+    display: none; }
+  .gallery__slides--link {
+    cursor: pointer; } }
 
 @media only screen and (max-width: 600px) {
   .header {
@@ -13043,6 +13045,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .gallery__carousel--modal {
     width: 100% !important;
     max-height: 90% !important; }
+  .gallery__slides--link {
+    cursor: pointer; }
+    .gallery__slides--link-image {
+      height: 50vh !important; }
   .footer__contact {
     text-align: center; }
   .footer__hours {
@@ -13108,8 +13114,6 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     font-weight: bold; }
   .about__header--subtitle {
     font-weight: bold; }
-  .about__services--wrapper {
-    padding: 30px 0 !important; }
   .about__services--title {
     font-weight: bold;
     text-transform: uppercase; }
@@ -13124,9 +13128,13 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     align-items: center;
     border: none; }
   .gallery__slides {
-    border: #F57F17 2px solid; }
-    .gallery__slides--image {
+    height: auto;
+    width: auto; }
+    .gallery__slides--link {
       cursor: not-allowed; }
+      .gallery__slides--link-image {
+        height: 80vh !important;
+        border: #F57F17 2px solid; }
   .gallery__indicator {
     margin: 0 50px; }
     .gallery__indicator--direction {
@@ -13134,9 +13142,6 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       .gallery__indicator--direction-icon {
         font-size: 4.2rem;
         margin: 0 !important; }
-  .gallery__carousel--item {
-    width: 400px !important;
-    height: 400px !important; }
   .gallery__carousel--modal {
     height: 100vh;
     background-size: 100% 100%; }
@@ -19665,7 +19670,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 @media only screen and (max-width: 992px) {
   .gallery__indicator {
-    display: none; } }
+    display: none; }
+  .gallery__slides--link {
+    cursor: pointer; } }
 
 @media only screen and (max-width: 600px) {
   .header {
@@ -19682,6 +19689,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .gallery__carousel--modal {
     width: 100% !important;
     max-height: 90% !important; }
+  .gallery__slides--link {
+    cursor: pointer; }
+    .gallery__slides--link-image {
+      height: 50vh !important; }
   .footer__contact {
     text-align: center; }
   .footer__hours {
