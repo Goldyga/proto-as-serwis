@@ -21,6 +21,7 @@
         }
     }
     .about {
+        padding-top: 60px;
         &__header {
             &--title {
                 font-size: 2rem;
@@ -29,13 +30,9 @@
     }
     .gallery {
         &__carousel {
-            &--item {
-                width: 200px !important;
-                height: 200px !important;
-            }
             &--modal {
                 width: 100% !important;
-                height: 100% !important;
+                max-height: 90% !important;
             }
         }
     }

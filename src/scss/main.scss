@@ -78,6 +78,9 @@
         }
     }
     &__services {
+        &--wrapper {
+            padding: 30px 0!important;
+        }
         &--title {
             font-weight: bold;
             text-transform: uppercase;
@@ -87,14 +90,6 @@
                 color: green;
             }         
         }
-    }
-    .more_info {
-        cursor: pointer;
-        color: green;
-    }
-    .more_close {
-        @extend .more_info;
-        color: red;
     }
 }
 

@@ -12446,13 +12446,13 @@ $(function () {
         return false;
     });
     $('.more_info').on('click', function () {
-        $(this).parents('.s12').find('.about__services--more').removeClass('hide');
-        $(this).parents('.s12').find('.flexslider_services').flexslider('next');
+        $(this).parents('.about__services--wrapper').find('.about__services--more').removeClass('hide');
+        $(this).parents('.about__services--wrapper').find('.flexslider_services').flexslider('next');
         return false;
     });
     $('.more_close').on('click', function () {
-        $(this).parents('.s12').find('.about__services--more').addClass('hide');
-        $(this).parents('.s12').find('.flexslider_services').flexslider('next');
+        $(this).parents('.about__services--wrapper').find('.about__services--more').addClass('hide');
+        $(this).parents('.about__services--wrapper').find('.flexslider_services').flexslider('next');
         return false;
     });
     AOS.init();
