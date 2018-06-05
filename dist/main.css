@@ -13038,19 +13038,15 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       margin: 0; }
       .header__title--text {
         font-size: 2rem; }
-  .about {
-    padding-top: 60px; }
-    .about__header--title {
-      font-size: 2rem; }
+  .about__header--title {
+    font-size: 2rem; }
   .gallery__carousel--modal {
     width: 100% !important;
     max-height: 90% !important; }
-  .footer {
-    padding-top: 60px; }
-    .footer__contact {
-      text-align: center; }
-    .footer__hours {
-      text-align: center; } }
+  .footer__contact {
+    text-align: center; }
+  .footer__hours {
+    text-align: center; } }
 
 .header {
   min-height: 85vh;
@@ -13100,6 +13096,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       color: #f9a825;
       font-weight: bold; }
 
+#about, #gallery {
+  padding-top: 56px; }
+
 .about {
   min-height: 100vh;
   display: flex;
@@ -13118,17 +13117,16 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     color: green; }
 
 .gallery {
-  min-height: 100vh;
-  display: flex;
-  align-items: center; }
+  padding: 20px 0; }
   .gallery__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     border: none; }
   .gallery__slides {
-    height: auto;
-    width: 600px; }
+    border: #F57F17 2px solid; }
+    .gallery__slides--image {
+      cursor: not-allowed; }
   .gallery__indicator {
     margin: 0 50px; }
     .gallery__indicator--direction {
@@ -13144,9 +13142,13 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     background-size: 100% 100%; }
 
 .map {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/95/LodzRingAutostradowy.svg");
   min-height: 700px; }
   .map iframe {
     display: block; }
+
+#contact {
+  padding-top: 56px; }
 
 .materialize-red {
   background-color: #e51c23 !important; }
@@ -19675,19 +19677,15 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       margin: 0; }
       .header__title--text {
         font-size: 2rem; }
-  .about {
-    padding-top: 60px; }
-    .about__header--title {
-      font-size: 2rem; }
+  .about__header--title {
+    font-size: 2rem; }
   .gallery__carousel--modal {
     width: 100% !important;
     max-height: 90% !important; }
-  .footer {
-    padding-top: 60px; }
-    .footer__contact {
-      text-align: center; }
-    .footer__hours {
-      text-align: center; } }
+  .footer__contact {
+    text-align: center; }
+  .footer__hours {
+    text-align: center; } }
 
 
 /*# sourceMappingURL=main.css.map*/
