@@ -107,7 +107,7 @@ body {
     @extend #about;
 }
 .gallery {
-    padding: 20px 0;
+    padding: 100px 0;
     &__wrapper {
         display: flex;
         justify-content: center;
@@ -120,7 +120,8 @@ body {
         &--link {
             cursor: not-allowed;
             &-image {
-                height: 80vh!important;
+                max-width:100%;
+                max-height: 600px;
                 border: #F57F17 2px solid;
             }
         }
@@ -144,7 +145,6 @@ body {
 }
 
 .map {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/95/LodzRingAutostradowy.svg');
     min-height: 700px;
     iframe {
         display: block;

@@ -1,17 +1,16 @@
 $(function () {
-    // var lastScrollTop;
+    var lastScrollTop;
     // $(window).scroll(function () {
     //     var currentScroll = $(this).scrollTop();
     //     if (currentScroll > lastScrollTop) {
-    //         $('#nav').fadeOut();
+    //         $('.nav').fadeOut();
     //     }
     //     else{
-    //         $('#nav').fadeIn();
+    //         $('.nav').fadeIn();
     //     }
     //     lastScrollTop = currentScroll;
     // });
     $(".nav__link").on('click', function (event) {
-        let nav = $('#nav');
         if (this.hash !== "") {
             event.preventDefault();
             let hash = this.hash;
@@ -20,9 +19,7 @@ $(function () {
             }, 300, function () {
                 window.location.hash = hash;
             });
-            nav.fadeOut();
         }
-        nav.fadeIn();
     });
     setTimeout(function () {
         window.scrollTo(0, 1)
