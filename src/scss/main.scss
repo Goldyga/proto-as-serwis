@@ -1,7 +1,14 @@
 @import './variables.scss';
 @import './mixins.scss';
 @import './mediaQ.scss';
-
+body {
+    background-color: black;
+}
+.nav{
+    background-color: rgba(0,0,0,0.6)!important;
+    border-bottom: 1px solid #858686;
+    padding: 0 20px;
+}
 .header {
     min-height: 85vh;
     max-height: 85vh;
@@ -81,6 +88,9 @@
         }
     }
     &__services {
+        &--wrapper {
+            padding: 20px!important;
+        }
         &--title {
             font-weight: bold;
             text-transform: uppercase;
@@ -142,6 +152,6 @@
 }
 
 #contact {
-    padding-top: 56px;
+    @extend #about;
 }
 

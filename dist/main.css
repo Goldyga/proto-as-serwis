@@ -6153,7 +6153,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .tap-target-wrapper.open .tap-target-wave::after {
     visibility: visible;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    transition: opacity .3s, transform .3s, visibility 0s 1s; }
+    transition: opacity .3s, transform .3s, visibility 0s 1s; }
 
 .tap-target {
   position: absolute;
@@ -6188,7 +6188,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     transition: transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -12666,7 +12666,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .tap-target-wrapper.open .tap-target-wave::after {
     visibility: visible;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    transition: opacity .3s, transform .3s, visibility 0s 1s; }
+    transition: opacity .3s, transform .3s, visibility 0s 1s; }
 
 .tap-target {
   position: absolute;
@@ -12701,7 +12701,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     transition: transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -13054,6 +13054,14 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .footer__hours {
     text-align: center; } }
 
+body {
+  background-color: black; }
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-bottom: 1px solid #858686;
+  padding: 0 20px; }
+
 .header {
   min-height: 85vh;
   max-height: 85vh;
@@ -13102,7 +13110,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
       color: #f9a825;
       font-weight: bold; }
 
-#about, #gallery {
+#about, #gallery, #contact {
   padding-top: 56px; }
 
 .about {
@@ -13114,6 +13122,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     font-weight: bold; }
   .about__header--subtitle {
     font-weight: bold; }
+  .about__services--wrapper {
+    padding: 20px !important; }
   .about__services--title {
     font-weight: bold;
     text-transform: uppercase; }
@@ -13151,9 +13161,6 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   min-height: 700px; }
   .map iframe {
     display: block; }
-
-#contact {
-  padding-top: 56px; }
 
 .materialize-red {
   background-color: #e51c23 !important; }
@@ -19310,7 +19317,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .tap-target-wrapper.open .tap-target-wave::after {
     visibility: visible;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    transition: opacity .3s, transform .3s, visibility 0s 1s; }
+    transition: opacity .3s, transform .3s, visibility 0s 1s; }
 
 .tap-target {
   position: absolute;
@@ -19345,7 +19352,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     transition: transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s, transform .3s, visibility 0s;
     z-index: -1; }
 
 .tap-target-origin {
