@@ -10,8 +10,9 @@ body {
     padding: 0 20px;
 }
 .header {
-    min-height: 85vh;
-    max-height: 85vh;
+    margin-top: -55px;
+    min-height: 90vh;
+    max-height: 90vh;
     background: url('https://images.pexels.com/photos/21694/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat;
     background-position: left;
     background-color: black;
@@ -71,10 +72,8 @@ body {
     }
 }
 
-#about {
-    padding-top: 56px;
-}
 .about {
+    padding-top: 55px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -103,9 +102,6 @@ body {
     }
 }
 
-#gallery {
-    @extend #about;
-}
 .gallery {
     padding: 100px 0;
     &__wrapper {
@@ -151,7 +147,4 @@ body {
     }
 }
 
-#contact {
-    @extend #about;
-}
 

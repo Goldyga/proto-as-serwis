@@ -13033,9 +13033,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 600px) {
   .header {
     background-position: center;
-    justify-content: center;
-    min-height: 75vh;
-    max-height: 75vh; }
+    justify-content: center; }
     .header__title {
       margin: 0; }
       .header__title--text {
@@ -13063,8 +13061,9 @@ body {
   padding: 0 20px; }
 
 .header {
-  min-height: 85vh;
-  max-height: 85vh;
+  margin-top: -55px;
+  min-height: 90vh;
+  max-height: 90vh;
   background: url("https://images.pexels.com/photos/21694/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260") no-repeat;
   background-position: left;
   background-color: black;
@@ -13110,10 +13109,8 @@ body {
       color: #E65100;
       font-weight: bold; }
 
-#about, #gallery, #contact {
-  padding-top: 56px; }
-
 .about {
+  padding-top: 55px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -19684,9 +19681,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 600px) {
   .header {
     background-position: center;
-    justify-content: center;
-    min-height: 75vh;
-    max-height: 75vh; }
+    justify-content: center; }
     .header__title {
       margin: 0; }
       .header__title--text {
